@@ -11,7 +11,7 @@ KNN       : K=5 nearest graded training responses of the SAME question (cosine),
 Artifacts : weights/approach1/model.npz   (idf, training TF-IDF rows, grades, question ids)
             weights/approach1/vocab.json  (vocabulary, frequent words for spelling)
             weights/approach1/config.json (settings + CV result)
-            built by tuning/approach1/train_approach1.py. Plain numpy/JSON, no pickled estimators.
+            written by TfidfKNNModel.save() after fit(). Plain numpy/JSON, no pickled estimators.
             Inference re-implements the fitted TF-IDF transform; needs only numpy, scipy,
             scikit-learn (stop-word list), nltk (Porter stemmer).
 """
