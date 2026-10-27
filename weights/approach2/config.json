@@ -1,0 +1,13 @@
+{
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "max_seq_length": 256,
+  "center": true,
+  "large_min": 100,
+  "k_large": 11,
+  "combine_large": "vote",
+  "k_small": 3,
+  "combine_small": "wmean",
+  "cv_mean_per_question_qwk": 0.4301,
+  "cv_std": 0.0386
+}
