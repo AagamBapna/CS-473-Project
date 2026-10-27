@@ -1,0 +1,9 @@
+data/
+__pycache__/
+*.pyc
+.venv/
+.part1-venv/
+local_assets/
+local_environment/
+submission.zip
+credentials.py

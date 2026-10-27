@@ -1,0 +1,15 @@
+{
+  "stopwords": false,
+  "stem": true,
+  "spell": true,
+  "ngram_max": 1,
+  "sublinear_tf": true,
+  "min_df": 1,
+  "k": 5,
+  "weighting": "similarity",
+  "aggregate": "mean",
+  "same_question": true,
+  "offset": -0.1,
+  "cv_mean_per_question_qwk": 0.4931,
+  "cv_std": 0.0159
+}
