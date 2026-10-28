@@ -1,12 +1,36 @@
-"""Shared pieces for Experiments 1-3 (CS 47300 Part 1)."""
+"""Shared pieces for Experiments 1-3 (CS 47300 Part 1).
+
+Paths are relative to the repository (this file lives in <repo>/experiments/):
+  <repo>/approach1.py, approach2.py, approach3.py, a3_*.py   submitted code (what the grader runs)
+  <repo>/training/                                            Approach 3 trainer (train_approach3.py, common.py, ...)
+  <repo>/weights/approach1/config.json, weights/approach2/config.json  tuned settings of the KNN approaches
+Environment variables:
+  CS473_DATA      path to training_dataset_updated.csv (required; the CSV is not committed)
+  CS473_CRED_DIR  directory holding credentials.py (only for the LLM variant of Approach 3; never committed)
+"""
 import os, sys
 import numpy as np, pandas as pd
 HERE = os.path.dirname(os.path.abspath(__file__))
-sys.path.insert(0, os.path.join(HERE, "shim")); sys.path.insert(0, os.path.join(HERE, "team"))
-sys.path.insert(0, "/home/claude/approach3"); sys.path.insert(0, "/home/claude/submission")
-from common import qwk, load, make_folds  # noqa
-DATA = "/home/claude/approach3/data/train_updated.csv"
+REPO = os.path.dirname(HERE)
+sys.path.insert(0, os.path.join(REPO, "training")); sys.path.insert(0, REPO)
+try:                                   # the submitted Approach 1 uses NLTK's Porter stemmer
+    import nltk.stem  # noqa: F401
+except ImportError:                    # stand-in Porter stemmer, only if NLTK is not installed
+    sys.path.insert(0, os.path.join(HERE, "shim"))
+if os.environ.get("CS473_CRED_DIR"):
+    sys.path.insert(0, os.environ["CS473_CRED_DIR"])
+from common import qwk, load, make_folds  # noqa: E402  (training/common.py)
+DATA = os.environ.get("CS473_DATA", os.path.join(REPO, "training_dataset_updated.csv"))
 RES = os.path.join(HERE, "results"); FIG = os.path.join(HERE, "figures")
+os.makedirs(RES, exist_ok=True); os.makedirs(FIG, exist_ok=True)
+
+
+def knn_params(n):
+    """Tuned settings of approach<n> (weights/approach<n>/config.json), restricted to its DEFAULT_PARAMS keys."""
+    import json, importlib
+    mod = importlib.import_module(f"approach{n}")
+    cfg = json.load(open(os.path.join(REPO, "weights", f"approach{n}", "config.json")))
+    return {k: v for k, v in cfg.items() if k in mod.DEFAULT_PARAMS}
 
 
 def load_data():
@@ -71,7 +95,7 @@ def rows(df):
     return [{"id": str(i), "question": str(q), "text": t, "score": float(y)} for i, q, t, y in zip(df.id, df.q, df.text, df.y)]
 
 
-# ---------------- Approach 1 (teammate's TF-IDF KNN) ----------------
+# ---------------- Approach 1 (TF-IDF KNN, submitted code) ----------------
 def a1_fit_predict(T, P, **params):
     import approach1
     model = approach1.fit(rows(T), **params)
@@ -79,12 +103,12 @@ def a1_fit_predict(T, P, **params):
     return np.array([o["score"] for o in out], float)
 
 
-# ---------------- Approach 2 (teammate's embedding KNN, precomputed MiniLM embeddings) ----------------
+# ---------------- Approach 2 (embedding KNN, precomputed MiniLM embeddings) ----------------
 _EMB = None
 def embeddings(df):
     global _EMB
     if _EMB is None:
-        z = np.load(os.path.join(HERE, "team", "approach2", "train_embeddings.npz"))
+        z = np.load(os.path.join(REPO, "weights", "approach2", "train_embeddings.npz"))
         raw = pd.read_csv(DATA)
         _EMB = dict(zip(raw.Id, z["embeddings"].astype(np.float32)))
     return np.stack([_EMB[i] for i in df.id])
@@ -98,17 +122,20 @@ def a2_fit_predict(T, P, **params):
     return np.array([o["score"] for o in out], float)
 
 
-# ---------------- Approach 3 (ours, CPU part: trained model, no LLM) ----------------
-def a3_fit_predict(T, P, n_jobs=2):
-    import tempfile, importlib.util, json
+# ---------------- Approach 3 (stacked grader; trained with training/train_approach3.py, predicted with the submitted approach3.py) ----------------
+def a3_fit_predict(T, P, n_jobs=2, llm=False):
+    """Retrain Approach 3 on T only (its vocabularies, rubric, stacker, cut points and LLM example
+    set all come from T), export it exactly like the submission, and grade P through approach3.py.
+    llm=True also runs the GenAI stage (needs CS473_CRED_DIR/credentials.py and network access)."""
+    import tempfile, importlib.util
     from pathlib import Path
     import train_approach3 as TA
     with tempfile.TemporaryDirectory() as tmp:
         w = Path(tmp) / "weights" / "approach3"
         TA.export(T, w, n_jobs=n_jobs, check=False)
-        spec = importlib.util.spec_from_file_location("a3entry", "/home/claude/submission/approach3.py")
+        spec = importlib.util.spec_from_file_location("a3entry", os.path.join(REPO, "approach3.py"))
         mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-        model = mod.load_model(str(Path(tmp) / "weights"), {"genai_enabled": False}, {})
+        model = mod.load_model(str(Path(tmp) / "weights"), {"genai_enabled": bool(llm), "api_max_requests": 150}, {})
         out = model.predict(rows(P), allowed(pd.concat([T, P])))
     got = {o["id"]: o["score"] for o in out}
     return np.array([got[str(i)] for i in P.id], float)

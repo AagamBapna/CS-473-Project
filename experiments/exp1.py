@@ -16,8 +16,8 @@ def cv(name, fn, **params):
     print(f"{name:34s} per-q QWK {m:.4f} ± {np.std(fold_means):.4f} | large {big:.3f} | small {small:.3f} [{time.time()-t0:.0f}s]", flush=True)
     return pred
 import approach1, approach2
-p1 = cv("Approach 1: TF-IDF KNN", a1_fit_predict, **{k: v for k, v in json.load(open('/tmp/claude-0/-home-claude/0949abf2-6679-5270-afce-bc641f54d0b5/scratchpad/fixcheck/weights/approach1/config.json')).items() if k in approach1.DEFAULT_PARAMS})
-p2 = cv("Approach 2: MiniLM KNN", a2_fit_predict, **{k: v for k, v in json.load(open('/tmp/claude-0/-home-claude/0949abf2-6679-5270-afce-bc641f54d0b5/scratchpad/fixcheck/weights/approach2/config.json')).items() if k in approach2.DEFAULT_PARAMS})
+p1 = cv("Approach 1: TF-IDF KNN", a1_fit_predict, **knn_params(1))
+p2 = cv("Approach 2: MiniLM KNN", a2_fit_predict, **knn_params(2))
 pd.DataFrame({"id": df.id, "q": df.q, "fold": fold, "y": df.y, "pred_a1": p1, "pred_a2": p2}).to_csv(os.path.join(RES, "exp1_oof_a1_a2.csv"), index=False)
 # Approach 3 numbers come from its own CV through the submission code (train_approach3.py --cv) and the LLM replay
 rows_out.append(dict(approach="Approach 3: stacked grader (no LLM)", settings="per-question stack + cross-question ridge + LSA, per-question cut points",

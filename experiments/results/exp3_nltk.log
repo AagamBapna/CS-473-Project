@@ -1,0 +1,165 @@
+random seed 0 done [14s]
+random seed 1 done [26s]
+random seed 2 done [40s]
+random seed 3 done [53s]
+random seed 4 done [66s]
+N=2 seed 0 done [82s]
+N=3 seed 0 done [100s]
+N=5 seed 0 done [120s]
+N=8 seed 0 done [141s]
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (11). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+N=12 seed 0 done [165s]
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (11). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (12) found smaller than n_clusters (14). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (13). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (13). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (12) found smaller than n_clusters (16). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (15). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (15). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (14) found smaller than n_clusters (15). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (14) found smaller than n_clusters (16). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (17) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (17) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (12) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (15) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (14) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (14) found smaller than n_clusters (18). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (18) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (17) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (19) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (17) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (18) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (12) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (15) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (14) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (14) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (19) found smaller than n_clusters (20). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+N=20 seed 0 done [197s]
+chosen N = 12
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (11). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+N=12 seed 1 done [221s]
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (11). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+N=12 seed 2 done [246s]
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (11). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+N=12 seed 3 done [270s]
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (11). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (11) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+/Users/aagambapna/cs473project/.part1-venv/lib/python3.12/site-packages/sklearn/base.py:1389: ConvergenceWarning: Number of distinct clusters (10) found smaller than n_clusters (12). Possibly due to duplicate points in X.
+  return fit_method(estimator, *args, **kwargs)
+N=12 seed 4 done [294s]
+exit 0

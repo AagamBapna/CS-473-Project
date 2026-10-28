@@ -1,0 +1,9 @@
+T=17303 P=1922 rows; Approach 3 (no LLM); seeds [2]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmp6b7pmy02/weights/approach3 (30.0 MB)
+seed 2 size 70% n=12093: per-q 0.4708 (large 0.677, small 0.440) pooled 0.8765 [35s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmp51lokagv/weights/approach3 (33.7 MB)
+seed 2 size 80% n=13844: per-q 0.4607 (large 0.671, small 0.430) pooled 0.8675 [37s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmpynh8n6gz/weights/approach3 (37.5 MB)
+seed 2 size 90% n=15592: per-q 0.4723 (large 0.677, small 0.442) pooled 0.8774 [41s]
+done
+exit 0

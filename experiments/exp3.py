@@ -4,7 +4,7 @@ import json, time
 from sklearn.cluster import KMeans
 from sklearn.feature_extraction.text import TfidfVectorizer
 import approach1
-P1 = {k: v for k, v in json.load(open('/tmp/claude-0/-home-claude/0949abf2-6679-5270-afce-bc641f54d0b5/scratchpad/fixcheck/weights/approach1/config.json')).items() if k in approach1.DEFAULT_PARAMS}
+P1 = knn_params(1)
 SIZES = (0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9)
 df = load_data(); T, P = split_TP(df, seed=0); T = T.reset_index(drop=True)
 # Same text representation as Approach 1 (its tokenizer: spelling + stemming, unigram TF-IDF), fitted on all of T (text only)

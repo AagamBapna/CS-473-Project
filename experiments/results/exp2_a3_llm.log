@@ -1,0 +1,32 @@
+T=17303 P=1922 rows; Approach 3 (+LLM); seeds [0]
+exported 8 per-question models + cross-question model for 83 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmpsjq9u6qq/weights/approach3 (8.1 MB)
+[approach3-llm] 494 answers graded by gpt-oss:120b with 92 requests (0 failed) in 392s
+seed 0 size 10% n=1712: per-q 0.3317 (large 0.572, small 0.296) pooled 0.7367 [401s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmptl4mrnxu/weights/approach3 (10.4 MB)
+[approach3-llm] 202 answers graded by gpt-oss:120b with 81 requests (0 failed) in 337s
+seed 0 size 20% n=3459: per-q 0.5301 (large 0.605, small 0.519) pooled 0.8407 [349s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmpodah8e3g/weights/approach3 (14.8 MB)
+[approach3-llm] 202 answers graded by gpt-oss:120b with 81 requests (0 failed) in 305s
+seed 0 size 30% n=5211: per-q 0.6259 (large 0.616, small 0.627) pooled 0.8536 [323s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmprdwxutci/weights/approach3 (18.8 MB)
+[approach3-llm] 202 answers graded by gpt-oss:120b with 81 requests (0 failed) in 465s
+seed 0 size 40% n=6921: per-q 0.6281 (large 0.617, small 0.630) pooled 0.8617 [486s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmp58xm8z8h/weights/approach3 (22.6 MB)
+[approach3-llm] 202 answers graded by gpt-oss:120b with 81 requests (0 failed) in 483s
+seed 0 size 50% n=8674: per-q 0.6595 (large 0.640, small 0.662) pooled 0.8727 [508s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmp5_7jyb1e/weights/approach3 (26.3 MB)
+[approach3-llm] 202 answers graded by gpt-oss:120b with 81 requests (0 failed) in 490s
+seed 0 size 60% n=10382: per-q 0.6488 (large 0.659, small 0.647) pooled 0.8730 [519s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmp6hb124h4/weights/approach3 (29.9 MB)
+[approach3-llm] 202 answers graded by gpt-oss:120b with 81 requests (0 failed) in 323s
+seed 0 size 70% n=12093: per-q 0.6814 (large 0.659, small 0.685) pooled 0.8789 [356s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmp1fnroa9n/weights/approach3 (33.7 MB)
+[approach3-llm] 202 answers graded by gpt-oss:120b with 81 requests (0 failed) in 269s
+seed 0 size 80% n=13844: per-q 0.6757 (large 0.663, small 0.678) pooled 0.8838 [304s]
+exported 10 per-question models + cross-question model for 81 small questions to /var/folders/6w/_6nszprd5mj3s3dj3g36v2300000gn/T/tmpcv1ebs82/weights/approach3 (37.5 MB)
+[approach3-llm] request failed (GenAIError); keeping model grades for this batch
+[approach3-llm] request failed (GenAIError); keeping model grades for this batch
+[approach3-llm] 202 answers graded by gpt-oss:120b with 83 requests (2 failed) in 270s
+seed 0 size 90% n=15592: per-q 0.6995 (large 0.664, small 0.705) pooled 0.8881 [310s]
+done
+exit 0
