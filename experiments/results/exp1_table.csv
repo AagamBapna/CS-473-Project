@@ -1,0 +1,5 @@
+approach,settings,mean_per_q_qwk,fold_std,large_q_1_10,small_q_11_91
+Approach 1: TF-IDF KNN,"{""stopwords"": false, ""stem"": true, ""spell"": true, ""ngram_max"": 1, ""sublinear_tf"": true, ""min_df"": 1, ""k"": 5, ""weighting"": ""similarity"", ""aggregate"": ""mean"", ""same_question"": true, ""offset"": -0.1}",0.3366666856571642,0.05322333430072469,0.4857294437038163,0.3180338409013327
+Approach 2: MiniLM KNN,"{""max_seq_length"": 256, ""center"": true, ""large_min"": 100, ""k_large"": 11, ""combine_large"": ""vote"", ""k_small"": 3, ""combine_small"": ""wmean""}",0.3932074646720468,0.04216789475292883,0.5238300781796333,0.3768796379835986
+Approach 3: stacked grader (no LLM),"per-question stack + cross-question ridge + LSA, per-question cut points",0.5647444444444444,0.01,0.6891,0.5492
+Approach 3: + gpt-oss:120b few-shot grader + expected-QWK decoder,"one LLM call per small question, all graded answers as examples; blend 0.7; decoder",0.6989666666666667,0.011,0.6891,0.7002
