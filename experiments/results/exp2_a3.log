@@ -1,0 +1,40 @@
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpj4xvje8q/weights/approach3 (33.9 MB)
+seed 0 size 80% n=13844: per-q 0.4449 (large 0.663, small 0.413) pooled 0.8672 [119s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpo_liyndh/weights/approach3 (37.6 MB)
+seed 0 size 90% n=15592: per-q 0.4528 (large 0.664, small 0.422) pooled 0.8728 [129s]
+exported 8 per-question models + cross-question model for 83 small questions to /tmp/tmpkas4jk18/weights/approach3 (8.0 MB)
+seed 1 size 10% n=1712: per-q 0.0675 (large 0.528, small -0.000) pooled 0.2164 [24s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmplykh3okh/weights/approach3 (10.4 MB)
+seed 1 size 20% n=3459: per-q 0.0197 (large 0.624, small -0.069) pooled 0.7263 [36s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmp3mia6fa6/weights/approach3 (14.8 MB)
+seed 1 size 30% n=5211: per-q 0.2281 (large 0.629, small 0.169) pooled 0.8126 [50s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpz9adwvg3/weights/approach3 (18.7 MB)
+seed 1 size 40% n=6921: per-q 0.3781 (large 0.649, small 0.338) pooled 0.8451 [65s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpxep58tuy/weights/approach3 (22.6 MB)
+seed 1 size 50% n=8674: per-q 0.4105 (large 0.648, small 0.376) pooled 0.8534 [76s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmph3bv490s/weights/approach3 (26.4 MB)
+seed 1 size 60% n=10382: per-q 0.4031 (large 0.658, small 0.366) pooled 0.8648 [86s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpg8hkigb7/weights/approach3 (30.0 MB)
+seed 1 size 70% n=12093: per-q 0.4191 (large 0.677, small 0.381) pooled 0.8727 [103s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpva9oow67/weights/approach3 (33.7 MB)
+seed 1 size 80% n=13844: per-q 0.4324 (large 0.685, small 0.395) pooled 0.8753 [113s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmphvij_tsu/weights/approach3 (37.6 MB)
+seed 1 size 90% n=15592: per-q 0.4448 (large 0.674, small 0.411) pooled 0.8732 [141s]
+exported 8 per-question models + cross-question model for 83 small questions to /tmp/tmp98fjuphn/weights/approach3 (8.1 MB)
+seed 2 size 10% n=1712: per-q 0.0726 (large 0.541, small 0.004) pooled 0.5447 [19s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpbyrhllmi/weights/approach3 (10.4 MB)
+seed 2 size 20% n=3459: per-q 0.1831 (large 0.606, small 0.121) pooled 0.7838 [24s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmp_s1428sz/weights/approach3 (14.8 MB)
+seed 2 size 30% n=5211: per-q 0.2693 (large 0.628, small 0.216) pooled 0.8191 [31s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmprr85yd9z/weights/approach3 (18.7 MB)
+seed 2 size 40% n=6921: per-q 0.3549 (large 0.633, small 0.314) pooled 0.8398 [37s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpirjyoy5l/weights/approach3 (22.6 MB)
+seed 2 size 50% n=8674: per-q 0.4105 (large 0.635, small 0.377) pooled 0.8497 [44s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmpqu4wrfcr/weights/approach3 (26.4 MB)
+seed 2 size 60% n=10382: per-q 0.4449 (large 0.660, small 0.413) pooled 0.8629 [51s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmp4zg15ftq/weights/approach3 (30.2 MB)
+seed 2 size 70% n=12093: per-q 0.4708 (large 0.677, small 0.440) pooled 0.8765 [61s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmprc9w_681/weights/approach3 (33.9 MB)
+seed 2 size 80% n=13844: per-q 0.4610 (large 0.673, small 0.430) pooled 0.8688 [66s]
+exported 10 per-question models + cross-question model for 81 small questions to /tmp/tmp0civm0l3/weights/approach3 (37.6 MB)
+seed 2 size 90% n=15592: per-q 0.4723 (large 0.677, small 0.442) pooled 0.8774 [76s]

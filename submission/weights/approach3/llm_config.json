@@ -1,0 +1,13 @@
+{
+ "enabled": true,
+ "model": "gpt-oss:120b",
+ "weight": 0.7,
+ "chunk": 30,
+ "max_workers": 6,
+ "time_budget_s": 1200,
+ "max_requests": 135,
+ "max_tokens": 6000,
+ "max_words_example": 70,
+ "max_words_answer": 120,
+ "temperature": 0
+}

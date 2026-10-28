@@ -1,0 +1,14 @@
+# Same versions as the course autograder (student_instructions.pdf, section 7). Python 3.10+ (3.12 recommended).
+numpy==2.2.6
+scipy==1.15.3
+pandas==2.2.3
+scikit-learn==1.6.1
+joblib==1.5.3
+nltk==3.9.2
+# Approach 2 encoder (MiniLM) and local Approach 2 testing
+torch==2.8.0
+sentence-transformers==5.1.1
+transformers==4.55.4
+huggingface-hub==0.34.4
+# figures for Experiments 2-3
+matplotlib>=3.8
