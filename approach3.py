@@ -16,8 +16,14 @@ question's graded answers (similarity to the full-mark answers, nearest graded n
 coverage of the full-mark answers' shared vocabulary, relative length), and a single ridge model
 trained on all small questions maps that to a grade.
 
+LLM stage (optional, for the small questions): a Purdue GenAI Studio model (via the course
+genai_wrapper.py and the key in credentials.py) is shown each question's instructor-graded
+answers and grades the new answers in batches; its grade is blended with the model's grade
+(weights/approach3/llm_config.json). Strict time and request budgets; any failure keeps the
+model's grade (a3_llm.py).
+
 Trained offline by train_approach3.py; artifacts are plain numpy/JSON files in
-weights/approach3/. No GenAI calls. Grades are snapped to questions[q]["allowed_grades"].
+weights/approach3/. Grades are snapped to questions[q]["allowed_grades"].
 """
 from pathlib import Path
 import sys
@@ -42,4 +48,4 @@ def _find_weights(weights_dir):
 
 def load_model(weights_dir, config=None, assets=None):
     # Load saved artifacts only. Nothing is trained here.
-    return Approach3Model(_find_weights(weights_dir))
+    return Approach3Model(_find_weights(weights_dir), config=config)

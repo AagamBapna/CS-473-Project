@@ -247,8 +247,13 @@ def _snap(g, allowed):
 
 
 class Approach3Model:
-    def __init__(self, folder):
+    def __init__(self, folder, config=None, client=None, log=print):
         folder = Path(folder)
+        self.config = config or {}
+        self.client, self.log = client, log
+        self.llm_cfg = json.loads((folder / "llm_config.json").read_text()) if (folder / "llm_config.json").exists() else {}
+        self.llm_examples = (json.loads((folder / "llm_examples.json").read_text())
+                             if (folder / "llm_examples.json").exists() else {})
         index = json.loads((folder / "index.json").read_text())
         gf = json.loads((folder / "global_counts.json").read_text())
         self.default_dist = index["default_grade_dist"]
@@ -284,7 +289,40 @@ class Approach3Model:
         ranks = (np.argsort(np.argsort(score, kind="stable"), kind="stable") + 0.5) / max(len(texts), 1)
         return [_num(allowed[int(np.searchsorted(cuts, r))]) for r in ranks]
 
+    def _llm_ready(self):
+        """LLM stage runs only if switched on in llm_config.json, not disabled by the grader's
+        config, and a real key is present in credentials.py."""
+        if not self.llm_cfg.get("enabled", False) or not self.llm_examples:
+            return False
+        if self.config.get("genai_enabled") is False:
+            return False
+        if self.client is not None:
+            return True
+        try:
+            from credentials import API_KEY
+            import genai_wrapper  # noqa: F401
+        except Exception:
+            return False
+        return isinstance(API_KEY, str) and len(API_KEY.strip()) >= 12 and "PASTE" not in API_KEY.upper()
+
+    def _llm_stage(self, small_cont, scores):
+        from a3_llm import LLMGrader, make_tasks
+        cfg = dict(self.llm_cfg)
+        budget = self.config.get("api_max_requests")
+        if isinstance(budget, int) and budget > 0:
+            cfg["max_requests"] = min(int(cfg.get("max_requests", 135)), budget - 10)
+        groups = {q: [(i, t) for i, t in zip(idx, texts)] for q, (idx, texts, _, _) in small_cont.items()}
+        allowed = {q: v[3] for q, v in small_cont.items()}
+        tasks = make_tasks(groups, {q: self.llm_examples.get(q) for q in groups}, allowed, int(cfg.get("chunk", 30)))
+        llm = LLMGrader(cfg, client=self.client, log=self.log).grade(tasks)
+        w = float(cfg.get("weight", 0.7))
+        for q, (idx, _, cont, al) in small_cont.items():
+            for i, c in zip(idx, cont):
+                if i in llm:
+                    scores[i] = _snap(w * llm[i] + (1 - w) * c, al)
+
     def predict(self, test_rows, questions):
+        small_cont = {}
         groups = defaultdict(list)
         for i, r in enumerate(test_rows):
             groups[str(r["question"])].append(i)
@@ -296,7 +334,9 @@ class Approach3Model:
                 # few graded answers -> cross-question model (continuous grade, then snap)
                 allowed = self._allowed(questions, qid, int(self.small.scale))
                 try:
-                    preds = [_snap(x, allowed) for x in self.small.predict_grades(qid, texts)]
+                    cont = self.small.predict_grades(qid, texts)
+                    preds = [_snap(x, allowed) for x in cont]
+                    small_cont[qid] = (idx, texts, [float(x) for x in cont], allowed)
                 except Exception:
                     preds = self._unseen(texts, allowed)
             elif qm is None:
@@ -312,4 +352,9 @@ class Approach3Model:
                 preds = [_snap(x, allowed) for x in g]
             for i, p in zip(idx, preds):
                 scores[i] = _num(p)
-        return [{"id": r["id"], "score": s} for r, s in zip(test_rows, scores)]
+        if small_cont and self._llm_ready():
+            try:
+                self._llm_stage(small_cont, scores)
+            except Exception as exc:      # the LLM stage can never break the submission
+                self.log(f"[approach3-llm] stage skipped ({type(exc).__name__}); using model grades")
+        return [{"id": r["id"], "score": _num(s)} for r, s in zip(test_rows, scores)]
